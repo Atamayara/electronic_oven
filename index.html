@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/png" href="./assets/oven-CKv4f1_c.png" />
+        <link rel="icon" type="image/png" href="./assets/oven.png" />
 
         <!-- reset.css destyle -->
         <link
@@ -13,8 +13,8 @@
 
         <title>電子レンジ</title>
 
-      <script type="module" crossorigin src="./assets/index-CNgCi1RY.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/index-TaplBqT7.css">
+      <script type="module" crossorigin src="./assets/index.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index.css">
     </head>
 
     <body>
@@ -22,37 +22,66 @@
 
         <main class="main">
             <section class="section oven">
-                <img class="image" src="./assets/oven-CKv4f1_c.png" alt="電子レンジのイラスト">
-                <p class="error" id="errorText">エラーが発生しました。もう一度お試しください。</p>
-                <textarea class="textarea" id="inputTextarea" rows="5" placeholder="食材"></textarea>
-                <button class="button submit" id="submit" type="submit">スタート</button>
-                <button class="button copy" id="copy" type="button">コピー</button>
+                <img
+                    class="image"
+                    src="./assets/oven.png"
+                    alt="電子レンジのイラスト" />
+                <p class="error" id="errorText">
+                    エラーが発生しました。もう一度お試しください。
+                </p>
+                <textarea
+                    class="textarea"
+                    id="inputTextarea"
+                    rows="5"
+                    placeholder="食材"></textarea>
+                <button class="button submit" id="submit" type="submit">
+                    スタート
+                </button>
+                <button class="button copy" id="copy" type="button">
+                    コピー
+                </button>
             </section>
 
             <article class="section description">
                 <h2 class="heading"><div class="label">基本的な使い方</div></h2>
-                <ol class="content procedure">
-                    <li class="item">食材を用意します</li>
-                    <li class="item">電子レンジに入れます</li>
-                    <li class="item">スタートを押します</li>
-                    <li class="item">食材が温まった状態になります</li>
-                </ol>
+                <div class="content">
+                    <ol class="list procedure">
+                        <li class="item">食材を用意します</li>
+                        <li class="item">電子レンジに入れます</li>
+                        <li class="item">スタートを押します</li>
+                        <li class="item">食材が温まった状態になります</li>
+                    </ol>
+                </div>
             </article>
-            
+
             <article class="section description caution">
                 <h2 class="heading"><div class="label">使用上の注意</div></h2>
-                <ul class="content">
-                    <li class="item">この製品によって生じたあらゆる損失について、当社では一切の責任を負いません</li>
-                    <li class="item">この製品は、LINEヤフー社が提供するテキスト解析WebAPIによる日本語形態素解析を利用しています</li>
-                    <li class="item"><a class="link" href="https://developer.yahoo.co.jp/sitemap/"
-                        >Web Services by Yahoo! JAPAN</a
-                    ></li>
-                </ul>
+                <div class="content">
+                    <ul class="list">
+                        <li class="item">
+                            この製品によって生じたあらゆる損失について、当方は一切の責任を負いません
+                        </li>
+                        <li class="item">
+                            この製品は、LINEヤフー社が提供するテキスト解析WebAPIによる日本語形態素解析を利用しています
+                        </li>
+                        <li class="item">
+                            <a
+                                class="link"
+                                href="https://developer.yahoo.co.jp/sitemap/"
+                                >Web Services by Yahoo! JAPAN</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </article>
         </main>
 
         <footer class="footer">
-            <p class="copyright"><a href="https://x.com/atamayara9"><small class="small">&copy; 2024-2025 K.eclair</small></a></p>
+            <p class="copyright">
+                <a href="https://x.com/atamayara9"
+                    ><small class="small">&copy; 2024-2025 K.eclair</small></a
+                >
+            </p>
         </footer>
     </body>
 </html>
